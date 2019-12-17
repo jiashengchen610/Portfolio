@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 126.7 187.8" style="enable-background:new 0 0 126.7 187.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#333;stroke-width:10;stroke-miterlimit:10;}
+	#circle--shape{
+		fill:#333;
+	}
+	.center {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#scroll {
+		animation: animateHeight 1.4s linear .3s infinite;
+	}
+
+	#circle--shape {
+		animation: animateShape 1.6s ease-in-out infinite;
+	}
+
+	@keyframes animateShape {
+		50% {
+			cy: 100;
+			opacity: .1;
+		}
+	}
+
+	@keyframes animateHeight {
+		70% {
+			height: 105px;
+		}
+	}
+
+      
+</style>
+<path id="scroll" class="st0" d="M119.5,65.5c0-30.9-25.1-56-56-56s-56,25.1-56,56v56c0,30.9,25.1,56,56,56s56-25.1,56-56V65.5z"/>
+<circle id="circle--shape" cx="63.5" cy="60" r="20"/>
+</svg>
