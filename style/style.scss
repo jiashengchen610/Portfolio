@@ -611,8 +611,12 @@ img {
                             width: 100%;
                         }
                         .product-image{
-                            height: 70%;
-                            width: 100%;
+                            max-width: 100vw;
+                            .active1{
+                                max-height: 60vh;
+                                padding: 10px;
+                                object-fit: contain;
+                            }
                         }
                     }
                 }
