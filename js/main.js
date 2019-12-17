@@ -3,9 +3,6 @@ $(document).ready(function () {
 
     // **********loader
     setTimeout(function () {
-		$('.loader_bg').fadeIn();
-    }, 1000);
-    setTimeout(function () {
 		$('.loader_bg').fadeToggle(500);
     }, 5000);
     setTimeout(function () {
