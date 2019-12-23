@@ -419,6 +419,24 @@ img {
   font-weight: 900;
 }
 
+.about .btn {
+  color: #333333;
+  border: #333333 1px solid;
+}
+
+.about .btn:hover {
+  background: #00a7be;
+  color: #ffffff;
+  border: #00a7be 1px solid;
+}
+
+.about .btn .fab {
+  font-size: 2rem;
+  margin-right: 10px;
+  height: 2rem;
+  vertical-align: middle;
+}
+
 .about .isthisBird {
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
@@ -459,6 +477,12 @@ img {
     grid-row: 2/7;
     text-align: left;
   }
+  .about .content .btn {
+    margin: 10px;
+    width: 70vw;
+    background: #333333;
+    color: #ffffff;
+  }
   .about .isthisBird {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
@@ -470,7 +494,7 @@ img {
   }
   .about .isthisBird #hero {
     font-size: 0.8rem;
-    margin: 0;
+    margin-top: 20%;
   }
   .about .isthisBird #Btfly {
     width: 30px;
@@ -589,12 +613,50 @@ img {
 }
 
 .works .row .card {
+  position: relative;
   height: 25vh;
   width: 100%;
   border: none;
   cursor: pointer;
   overflow: visible;
   padding: 5px;
+}
+
+.works .row .card:hover img {
+  opacity: 0.2;
+}
+
+.works .row .card:hover .hovIcon {
+  opacity: 1;
+}
+
+.works .row .card .hovIcon {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  text-align: center;
+}
+
+.works .row .card .hovIcon .fab {
+  font-size: 2rem;
+  color: #000000;
+  font-weight: 900;
+}
+
+.works .row .card a {
+  height: 70%;
+  text-decoration: none;
+  color: #000000;
+}
+
+.works .row .card a img {
+  height: 100%;
 }
 
 .works .row img {
