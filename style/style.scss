@@ -181,10 +181,12 @@ img {
 
 
 /*---------- banner area css start  --------*/
+.container-fluid{
+    overflow: hidden;
+}
 .wrapper{
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 .banner {
     display:grid;
@@ -317,21 +319,25 @@ img {
                 }
             }
         }
-        .btn{
-            color: $secColor;
-            // background: $secColor;
-            border: $secColor 1px solid;
-            &:hover {
-                background:$mainColor;
-                color:$white;
-                border: $mainColor 1px solid;
-            }
-                .fab{
-                    font-size: 2rem;
-                    margin-right: 10px;
-                    height: 2rem;
-                    vertical-align: middle;
+        .btng{
+            grid-column: 1/8;
+            grid-row: 6/7;
+            text-align: center;
+            .btn{
+                color: $white;
+                background:$secColor;
+                width: 40%;
+                &:hover {
+                    background:$mainColor;
+                    color:$white;
                 }
+                    .fab{
+                        font-size: 2rem;
+                        margin-right: 10px;
+                        height: 2rem;
+                        vertical-align: middle;
+                    }
+            }
         }
     .isthisBird{
         grid-column: 5/7;
@@ -342,7 +348,17 @@ img {
             white-space: nowrap;
         }
     }
-
+@media (max-width: 1200px){
+    .btng{
+        grid-column: 1/8;
+        grid-row: 6/7;
+        .btn{
+        margin: 5px;
+        background: $secColor;
+        color: $white;
+        }
+    }
+}
 /* phones */
 @media (max-width: 750px){
     .title{
@@ -358,17 +374,10 @@ img {
         grid-column: 1/8;
         grid-row:2/7;
         text-align: left;
-        .btn{
-        margin: 10px;
-        width: 70vw;
-        background: $secColor;
-        color: $white;
-        }
-            }
-        .isthisBird{
+    }
+    .isthisBird{
         grid-column: 1/7;
         grid-row: 7/8;
-        // overflow: visible;
         text-align: center;
         #hero{
             font-size: 0.8rem;
@@ -381,7 +390,16 @@ img {
             width: 200px;
             object-fit: contain;
         }
-        }
+    }
+    .btng{
+            grid-column: 1/8;
+            grid-row: auto;
+            .btn{
+            background: $secColor;
+            color: $white;
+            width: 60vw;
+            }
+    }
 }
 
 @media (orientation: landscape) and (max-height: 500px){
@@ -398,9 +416,15 @@ img {
         grid-column: 2/8;
         grid-row:1/7;
     }
-    // .isthisBird{
-    //     display: none;
-    // }
+    .isthisBird{
+        grid-column: 3/5;
+        grid-row: 7/8;
+        text-align: center;
+        object-fit: contain;
+        p{
+            margin: 0;
+        }
+    }
             
 }
 }

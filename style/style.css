@@ -203,6 +203,10 @@ img {
 
 /*---------- Nav area css ends -------------*/
 /*---------- banner area css start  --------*/
+.container-fluid {
+  overflow: hidden;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -211,7 +215,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  overflow: hidden;
 }
 
 .banner {
@@ -419,18 +422,28 @@ img {
   font-weight: 900;
 }
 
-.about .btn {
-  color: #333333;
-  border: #333333 1px solid;
+.about .btng {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  text-align: center;
 }
 
-.about .btn:hover {
+.about .btng .btn {
+  color: #ffffff;
+  background: #333333;
+  width: 40%;
+}
+
+.about .btng .btn:hover {
   background: #00a7be;
   color: #ffffff;
-  border: #00a7be 1px solid;
 }
 
-.about .btn .fab {
+.about .btng .btn .fab {
   font-size: 2rem;
   margin-right: 10px;
   height: 2rem;
@@ -450,6 +463,22 @@ img {
   font-size: 1rem;
   font-weight: 900;
   white-space: nowrap;
+}
+
+@media (max-width: 1200px) {
+  .about .btng {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1/8;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 1;
+    grid-row: 6/7;
+  }
+  .about .btng .btn {
+    margin: 5px;
+    background: #333333;
+    color: #ffffff;
+  }
 }
 
 @media (max-width: 750px) {
@@ -477,12 +506,6 @@ img {
     grid-row: 2/7;
     text-align: left;
   }
-  .about .content .btn {
-    margin: 10px;
-    width: 70vw;
-    background: #333333;
-    color: #ffffff;
-  }
   .about .isthisBird {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
@@ -503,6 +526,17 @@ img {
     width: 200px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .about .btng {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 7;
+    grid-column: 1/8;
+    grid-row: auto;
+  }
+  .about .btng .btn {
+    background: #333333;
+    color: #ffffff;
+    width: 60vw;
   }
 }
 
@@ -529,6 +563,20 @@ img {
     -ms-grid-row: 1;
     -ms-grid-row-span: 6;
     grid-row: 1/7;
+  }
+  .about .isthisBird {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7/8;
+    text-align: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .about .isthisBird p {
+    margin: 0;
   }
 }
 
