@@ -398,6 +398,41 @@ img {
   color: #333333;
 }
 
+.about .btng {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 2;
+  grid-row: 5/7;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.about .btng .btn {
+  color: #ffffff;
+  background: #00a7be;
+  display: block;
+  margin: 5px 0;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 50px;
+  height: 50px;
+}
+
+.about .btng .btn:hover {
+  opacity: 1;
+  color: #ffffff;
+}
+
+.about .btng .btn a {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 2rem;
+}
+
 .about .content {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -422,34 +457,6 @@ img {
   font-weight: 900;
 }
 
-.about .btng {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1/8;
-  -ms-grid-row: 6;
-  -ms-grid-row-span: 1;
-  grid-row: 6/7;
-  text-align: center;
-}
-
-.about .btng .btn {
-  color: #ffffff;
-  background: #333333;
-  width: 40%;
-}
-
-.about .btng .btn:hover {
-  background: #00a7be;
-  color: #ffffff;
-}
-
-.about .btng .btn .fab {
-  font-size: 2rem;
-  margin-right: 10px;
-  height: 2rem;
-  vertical-align: middle;
-}
-
 .about .isthisBird {
   -ms-grid-column: 5;
   -ms-grid-column-span: 2;
@@ -463,22 +470,6 @@ img {
   font-size: 1rem;
   font-weight: 900;
   white-space: nowrap;
-}
-
-@media (max-width: 1200px) {
-  .about .btng {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
-    grid-column: 1/8;
-    -ms-grid-row: 6;
-    -ms-grid-row-span: 1;
-    grid-row: 6/7;
-  }
-  .about .btng .btn {
-    margin: 5px;
-    background: #333333;
-    color: #ffffff;
-  }
 }
 
 @media (max-width: 750px) {
@@ -496,6 +487,19 @@ img {
     -webkit-writing-mode: horizontal-tb;
         -ms-writing-mode: lr-tb;
             writing-mode: horizontal-tb;
+  }
+  .about .btng {
+    -ms-grid-column: 7;
+    -ms-grid-column-span: 1;
+    grid-column: 7/8;
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7/8;
+    position: fixed;
+    bottom: 20%;
+  }
+  .about .btng .btn {
+    margin: 5px;
   }
   .about .content {
     -ms-grid-column: 1;
@@ -517,26 +521,16 @@ img {
   }
   .about .isthisBird #hero {
     font-size: 0.8rem;
-    margin-top: 20%;
+    margin-top: 10%;
   }
   .about .isthisBird #Btfly {
     width: 30px;
+    float: left;
   }
   .about .isthisBird img {
     width: 200px;
     -o-object-fit: contain;
        object-fit: contain;
-  }
-  .about .btng {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 7;
-    grid-column: 1/8;
-    grid-row: auto;
-  }
-  .about .btng .btn {
-    background: #333333;
-    color: #ffffff;
-    width: 60vw;
   }
 }
 
